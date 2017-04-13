@@ -205,7 +205,7 @@ def parse_text(text, username, message_id):
                 action_list.append(orders['peshera'])
             elif les_enabled and endurance >= 1 and orders['les'] not in action_list:
                 action_list.append(orders['les'])
-            elif arena_enabled and gold >= 5 and '🔎Поиск соперника' not in action_list and time() - lt_arena > 3600:
+            elif arena_enabled and gold >= 5 and '🔎Поиск соперника' not in action_list and time() - lt_arena > 300:
                 action_list.append('🔎Поиск соперника')
 
         elif arena_enabled and text.find('выбери точку атаки и точку защиты') != -1:
