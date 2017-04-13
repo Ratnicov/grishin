@@ -135,7 +135,7 @@ def queue_worker():
         try:
             if time() - lt_info > get_info_diff:
                 lt_info = time()
-                get_info_diff = random.randint(400, 800)
+                get_info_diff = random.randint(600, 1000)
                 if bot_enabled:
                     send_msg(bot_username, orders['hero'])
                 continue
